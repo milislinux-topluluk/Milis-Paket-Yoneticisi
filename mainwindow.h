@@ -120,8 +120,6 @@ private slots:
     void on_checkHideLibs_clicked(bool checked);
     void on_buttonUpgradeAll_clicked();
 
-    void on_radioStable_clicked();
-
 private:
     bool updated_once;
     bool warning_displayed;
