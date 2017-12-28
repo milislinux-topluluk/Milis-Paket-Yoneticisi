@@ -37,13 +37,13 @@ public:
     ~Cmd();
 
     bool isRunning();
-    int run(const QString &cmd_str, int = 0); // with option estimated time of completion
+    int run(const QString &cmd_str, int = 0); // Tahmini tamamlanma süresi seçeneği ile
     QString getOutput();
     QString getOutput(const QString &cmd_str);
 
 signals:
     void outputAvailable(const QString &output);
-    void runTime(int, int); // runtime counter with estimated time
+    void runTime(int, int); // Tahmini süreyle çalışma zamanı sayacı
     void started();
     void finished(int exitCode, QProcess::ExitStatus exitStatus);
 
@@ -55,14 +55,14 @@ public slots:
 
 private slots:
     void onStdoutAvailable();
-    void tick(); // slot called by timer that emits a counter
+    void tick(); // Bir sayaç yayınlayan zamanlayıcı tarafından çağrılan yuva
 
 private:
     QProcess *proc;
     QString output;
     QTimer *timer;
     int counter;
-    int est_duration; //estimated completion time
+    int est_duration; //tahmini tamamlanma süresi
 
 };
 

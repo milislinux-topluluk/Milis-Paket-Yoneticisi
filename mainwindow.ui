@@ -29,7 +29,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabApps">
       <property name="sizePolicy">
@@ -147,7 +147,7 @@
           <item>
            <widget class="QRadioButton" name="radioStable">
             <property name="text">
-             <string>Kararlı Depo</string>
+             <string>Resmi Depo</string>
             </property>
             <property name="checked">
              <bool>true</bool>
@@ -157,7 +157,7 @@
           <item>
            <widget class="QRadioButton" name="radioMXtest">
             <property name="text">
-             <string>Test Depo</string>
+             <string>Kapalı Kaynak Deposu</string>
             </property>
             <property name="checked">
              <bool>false</bool>
@@ -255,7 +255,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filter packages according to their status.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;tw-target-text&quot;/&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;aketleri durumlarına göre filtreleyin.&lt;/span&gt;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="currentText">
           <string>Tüm paketler</string>
@@ -285,7 +285,7 @@
        <item row="2" column="0" colspan="4">
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>Gri renkli öğeler zaten yüklenmiştir.</string>
+          <string>Gri renkli paketler zaten yüklü.</string>
          </property>
          <property name="margin">
           <number>0</number>
@@ -370,7 +370,7 @@
          </column>
          <column>
           <property name="text">
-           <string>Displayed</string>
+           <string>Görünüm</string>
           </property>
          </column>
         </widget>
@@ -574,7 +574,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>About this application</string>
+        <string>Bu uygulama hakkında</string>
        </property>
        <property name="text">
         <string>Hakkında...</string>
@@ -600,7 +600,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Display help </string>
+        <string>Yardımı göster</string>
        </property>
        <property name="text">
         <string>Yardım</string>
@@ -665,7 +665,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Quit application</string>
+        <string>Bu uygulamayı kapat</string>
        </property>
        <property name="text">
         <string>Kapat</string>

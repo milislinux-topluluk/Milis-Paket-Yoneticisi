@@ -100,7 +100,7 @@ private slots:
     void findPackage();
     void findPackageOther();
     void setConnections();
-    void tock(int, int); // tick-tock, updates progressBar when tick signal is emited
+    void tock(int, int); // tick-tock, tick sinyali gönderildiğinde progressBar'ı günceller
 
     void on_buttonInstall_clicked();
     void on_buttonAbout_clicked();
@@ -119,6 +119,8 @@ private slots:
     void on_buttonForceUpdate_clicked();
     void on_checkHideLibs_clicked(bool checked);
     void on_buttonUpgradeAll_clicked();
+
+    void on_radioStable_clicked();
 
 private:
     bool updated_once;

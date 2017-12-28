@@ -63,7 +63,7 @@ void MainWindow::setup()
         arch = "i386";
     }
     setProgressDialog();
-    lock_file = new LockFile("/var/lib/pkg/lock");
+    lock_file = new LockFile("/var/lib/pkg/kilit");
     connect(qApp, &QApplication::aboutToQuit, this, &MainWindow::cleanup);
     version = "0.3"; //getVersion("mps");
     this->setWindowTitle(tr("MiLPeK - Milis Program Ekle-Kaldır"));
@@ -124,8 +124,8 @@ bool MainWindow::update()
 // Yükleme bilgileri tamamlandığında arayüzü güncelle
 void MainWindow::updateInterface()
 {
-    QList<QTreeWidgetItem *> upgr_list = ui->treeOther->findItems("upgradable", Qt::MatchExactly, 5);
-    QList<QTreeWidgetItem *> inst_list = ui->treeOther->findItems("installed", Qt::MatchExactly, 5);
+    QList<QTreeWidgetItem *> upgr_list = ui->treeOther->findItems("Güncellenebilir", Qt::MatchExactly, 5);
+    QList<QTreeWidgetItem *> inst_list = ui->treeOther->findItems("Kurulu", Qt::MatchExactly, 5);
     ui->labelNumApps->setText(QString::number(ui->treeOther->topLevelItemCount()));
     ui->labelNumUpgr->setText(QString::number(upgr_list.count()));
     ui->labelNumInst->setText(QString::number(inst_list.count() + upgr_list.count()));
@@ -229,28 +229,28 @@ void MainWindow::processDoc(const QDomDocument &doc)
     QString uninstall_names;
     QStringList list;
 
-    QDomElement root = doc.firstChildElement("app");
+    QDomElement root = doc.firstChildElement("uygulama");
     QDomElement element = root.firstChildElement();
 
     for (; !element.isNull(); element = element.nextSiblingElement()) {
-        if (element.tagName() == "category") {
+        if (element.tagName() == "grup") {
             category = element.text().trimmed();
-        } else if (element.tagName() == "name") {
+        } else if (element.tagName() == "isim") {
             name = element.text().trimmed();
-        } else if (element.tagName() == "description") {
+        } else if (element.tagName() == "tanim") {
             description = element.text().trimmed();
-        } else if (element.tagName() == "installable") {
+        } else if (element.tagName() == "mimari") {
             installable = element.text().trimmed();
-        } else if (element.tagName() == "screenshot") {
+        } else if (element.tagName() == "ekran_resmi") {
             screenshot = element.text().trimmed();
-        } else if (element.tagName() == "preinstall") {
+        } else if (element.tagName() == "kos-kur") {
             preinstall = element.text().trimmed();
-        } else if (element.tagName() == "install_package_names") {
+        } else if (element.tagName() == "kurulacak_paketler") {
             install_names = element.text().trimmed();
             install_names.replace("\n", " ");
-        } else if (element.tagName() == "postinstall") {
+        } else if (element.tagName() == "kur-kos") {
             postinstall = element.text().trimmed();
-        } else if (element.tagName() == "uninstall_package_names") {
+        } else if (element.tagName() == "silinecek_paketler") {
             uninstall_names = element.text().trimmed();
         }
     }
@@ -423,7 +423,8 @@ void MainWindow::displayPackages(bool force_refresh)
     if (app_info_list.size() == 0 || force_refresh) {
         progress->setLabelText(tr("Paket listesi güncelleniyor..."));
         setConnections();
-        QString info_installed = cmd->getOutput("LC_ALL=en_US.UTF-8 mps -kl | grep -v deinstall | cut -f1"); //
+        QString info_installed = cmd->getOutput("mps -kl | xargs -I {}  mps -sdk {}");
+        //chmod 644" + tmp_file_name +"|LC_ALL=en_US.UTF-8 xargs mps -sdk  <" + tmp_file_name + "|grep 'kurulu sürüm' -B2
 
         //LC_ALL=en_US.UTF-8 xargs apt-cache policy <" + tmp_file_name + "|grep Candidate -B2
 
@@ -462,19 +463,19 @@ void MainWindow::displayPackages(bool force_refresh)
             for (int i = 0; i < ui->treeOther->columnCount(); ++i) {
                 (*it)->setToolTip(i, tr("Version ") + candidate.toString() + tr(" in stable repo"));
             }
-            (*it)->setText(5, "not installed");
+            (*it)->setText(5, "kurulu değil");
         } else if (installed.toString() == "") {
             for (int i = 0; i < ui->treeOther->columnCount(); ++i) {
                (*it)->setToolTip(i, tr("Not available in stable repo"));
             }
-            (*it)->setText(5, "not installed");
+            (*it)->setText(5, "kurulu değil");
         } else {
             inst_count++;
             if (installed >= repocandidate) {
                 for (int i = 0; i < ui->treeOther->columnCount(); ++i) {
                     (*it)->setForeground(2, QBrush(Qt::gray));
                     (*it)->setForeground(4, QBrush(Qt::gray));
-                    (*it)->setToolTip(i, tr("Latest version ") + installed.toString() + tr(" already installed"));
+                    (*it)->setToolTip(i, tr("En son sürüm ") + installed.toString() + tr(" zaten kurulu"));
                 }
                 (*it)->setText(5, "installed");
             } else {
@@ -483,7 +484,7 @@ void MainWindow::displayPackages(bool force_refresh)
                     (*it)->setToolTip(i, tr("Version ") + installed.toString() + tr(" installed"));
                 }
                 upgr_count++;
-                (*it)->setText(5, "upgradable");
+                (*it)->setText(5, "yükseltilebilir");
             }
 
         }
@@ -728,7 +729,7 @@ void MainWindow::installSelected()
     buildPackageLists();
 }
 
-// Check if online
+// İnternet kontrolü
 bool MainWindow::checkOnline()
 {
     return(system("wget -q --spider http://google.com >/dev/null 2>&1") == 0);
@@ -948,7 +949,7 @@ void MainWindow::clearCache()
 // Programın sürümünü edinin
 QString MainWindow::getVersion(QString name)
 {
-    return cmd->getOutput("mps -kl "+ name + "| awk 'NR==6 {print $3}'");
+    return cmd->getOutput("mps surum");//mps -kl "+ name + "| awk 'NR==6 {print $3}'
 }
 
 // Listelenen tüm paketler yüklüyse true dönün.
@@ -1426,7 +1427,7 @@ void MainWindow::on_buttonUpgradeAll_clicked()
     QString names;
     QTreeWidgetItemIterator it(ui->treeOther);
     QList<QTreeWidgetItem *> found_items;
-    found_items = ui->treeOther->findItems("upgradable", Qt::MatchExactly, 5);
+    found_items = ui->treeOther->findItems("Yükseltilebilir", Qt::MatchExactly, 5);
 
     while (*it) {
         if(found_items.contains(*it)) {

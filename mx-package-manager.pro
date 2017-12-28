@@ -25,7 +25,7 @@ QT       += core gui xml network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = mx-package-manager
+TARGET = milis-paket-yoneticisi
 TEMPLATE = app
 
 
@@ -44,16 +44,16 @@ HEADERS  += \
 FORMS    += \
     mainwindow.ui
 
-TRANSLATIONS += translations/mx-package-manager_ca.ts \
-                translations/mx-package-manager_de.ts \
-                translations/mx-package-manager_el.ts \
-                translations/mx-package-manager_es.ts \
-                translations/mx-package-manager_fr.ts \
-                translations/mx-package-manager_it.ts \
-                translations/mx-package-manager_ja.ts \
-                translations/mx-package-manager_nl.ts \
-                translations/mx-package-manager_ro.ts \
-                translations/mx-package-manager_sv.ts
+TRANSLATIONS += translations/milis-paket-yoneticisi_ca.ts \
+                translations/milis-paket-yoneticisi_de.ts \
+                translations/milis-paket-yoneticisi_el.ts \
+                translations/milis-paket-yoneticisi_es.ts \
+                translations/milis-paket-yoneticisi_fr.ts \
+                translations/milis-paket-yoneticisi_it.ts \
+                translations/milis-paket-yoneticisi_ja.ts \
+                translations/milis-paket-yoneticisi_nl.ts \
+                translations/milis-paket-yoneticisi_ro.ts \
+                translations/milis-paket-yoneticisi_sv.ts
 
 RESOURCES += \
     images.qrc

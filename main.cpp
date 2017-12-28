@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
     a.installTranslator(&qtTran);
 
     QTranslator appTran;
-    appTran.load(QString("mx-package-manager_") + QLocale::system().name(), "/usr/share/milpek/locale");
+    appTran.load(QString("milis-paket-yoneticisi_") + QLocale::system().name(), "/usr/share/milpek/locale");
     a.installTranslator(&appTran);
 
     if (getuid() == 0) {
         // Başka paket yöneticisi çalışıyorsa uygulamaya başlamayın, değilse program çalışırken paket yüklemeyi kilitle
-        LockFile lock_file("/var/lib/pkg/lock");
+        LockFile lock_file("/var/lib/pkg/kilit");
         if (lock_file.isLocked()) {
             QApplication::beep();
             QMessageBox::critical(0, QApplication::tr("Özel kilit alınamadı"),

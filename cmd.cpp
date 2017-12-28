@@ -42,7 +42,7 @@ Cmd::~Cmd()
 {
 }
 
-// this function is running the command, takes cmd_str and optional estimated completion time
+// Bu işlev komutu çalıştırıyor, cmd_str ve isteğe bağlı tahmini tamamlanma süresi alıyor
 int Cmd::run(const QString &cmd_str, int est_duration)
 {
     this->est_duration = est_duration;
