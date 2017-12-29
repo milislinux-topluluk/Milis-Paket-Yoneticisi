@@ -65,17 +65,17 @@
          </column>
          <column>
           <property name="text">
-           <string>Package</string>
+           <string>Paket adı</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Info</string>
+           <string>Bilgi</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Description</string>
+           <string>Tanım</string>
           </property>
          </column>
         </widget>
@@ -510,10 +510,100 @@
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Servisler</string>
+      </attribute>
+      <widget class="QTreeWidget" name="treePopularApps_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>902</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="tabKeyNavigation">
+        <bool>true</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Servis</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Bilgi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Açıklama</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLineEdit" name="searchPopular_3">
+       <property name="geometry">
+        <rect>
+         <x>736</x>
+         <y>39</y>
+         <width>174</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>Ara</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>354</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Milis Servislerini Yönet&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;tw-target-text&quot;/&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;G&lt;/span&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;ri renkli servisler çalışıyor.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </item>
    <item>
-    <layout class="QGridLayout" name="buttonBar" columnstretch="0,0,0,0,0,0,0,0,0,0">
+    <layout class="QGridLayout" name="buttonBar" columnstretch="0,0,0,0,0,0,0,0,0,0,0,0">
      <property name="sizeConstraint">
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
@@ -532,89 +622,7 @@
      <property name="spacing">
       <number>5</number>
      </property>
-     <item row="0" column="6">
-      <widget class="QPushButton" name="buttonUninstall">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Kaldır</string>
-       </property>
-       <property name="icon">
-        <iconset theme="archive-remove">
-         <normaloff>.</normaloff>.</iconset>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <spacer name="horizontalSpacer1">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Expanding</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="buttonAbout">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string>Bu uygulama hakkında</string>
-       </property>
-       <property name="text">
-        <string>Hakkında...</string>
-       </property>
-       <property name="icon">
-        <iconset theme="help-about">
-         <normaloff>.</normaloff>.</iconset>
-       </property>
-       <property name="shortcut">
-        <string>Alt+B</string>
-       </property>
-       <property name="autoDefault">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="buttonHelp">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string>Yardımı göster</string>
-       </property>
-       <property name="text">
-        <string>Yardım</string>
-       </property>
-       <property name="icon">
-        <iconset theme="help-browser">
-         <normaloff>.</normaloff>.</iconset>
-       </property>
-       <property name="shortcut">
-        <string>Alt+H</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="7">
+     <item row="0" column="9">
       <widget class="QPushButton" name="buttonInstall">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -640,8 +648,48 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="5">
-      <spacer name="horizontalSpacer2">
+     <item row="0" column="3">
+      <widget class="QPushButton" name="buttonHelp">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Yardımı göster</string>
+       </property>
+       <property name="text">
+        <string>Yardım</string>
+       </property>
+       <property name="icon">
+        <iconset theme="help-browser">
+         <normaloff>.</normaloff>.</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Alt+H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QPushButton" name="buttonUninstall">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Kaldır</string>
+       </property>
+       <property name="icon">
+        <iconset theme="archive-remove">
+         <normaloff>.</normaloff>.</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <spacer name="horizontalSpacer1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -656,7 +704,33 @@
        </property>
       </spacer>
      </item>
-     <item row="0" column="9">
+     <item row="0" column="2">
+      <widget class="QPushButton" name="buttonAbout">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Bu uygulama hakkında</string>
+       </property>
+       <property name="text">
+        <string>Hakkında...</string>
+       </property>
+       <property name="icon">
+        <iconset theme="help-about">
+         <normaloff>.</normaloff>.</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Alt+B</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="11">
       <widget class="QPushButton" name="buttonCancel">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -682,7 +756,23 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
+     <item row="0" column="7">
+      <spacer name="horizontalSpacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="5">
       <widget class="QLabel" name="labelMX">
        <property name="maximumSize">
         <size>
@@ -701,6 +791,35 @@
        </property>
        <property name="scaledContents">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>VT Güncelle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="mps_guncelle_buton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>MPS Guncelle</string>
        </property>
       </widget>
      </item>

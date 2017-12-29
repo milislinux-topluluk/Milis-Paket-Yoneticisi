@@ -1233,7 +1233,7 @@ void MainWindow::on_treePopularApps_itemExpanded(QTreeWidgetItem *item)
 // Tree item collapsed
 void MainWindow::on_treePopularApps_itemCollapsed(QTreeWidgetItem *item)
 {
-    item->setIcon(0, QIcon::fromTheme("folder-green", QIcon(":/simge/guncelle.png")));
+    item->setIcon(0, QIcon::fromTheme("folder-green"));
     ui->treePopularApps->resizeColumnToContents(2);
     ui->treePopularApps->resizeColumnToContents(4);
 }

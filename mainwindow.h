@@ -122,6 +122,10 @@ private slots:
 
     void on_radioStable_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_mps_guncelle_buton_clicked();
+
 private:
     bool updated_once;
     bool warning_displayed;

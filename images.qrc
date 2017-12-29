@@ -1,8 +1,9 @@
 <RCC>
-    <qresource prefix="/icons">
-        <file>icons/logo.png</file>
+    <qresource prefix="/simge">
+        <file>simge/logo.png</file>
     </qresource>
     <qresource prefix="/">
-        <file>icons/software-update-available.png</file>
+        <file>simge/guncelle.png</file>
+        <file>simge/bilgi.png</file>
     </qresource>
 </RCC>
