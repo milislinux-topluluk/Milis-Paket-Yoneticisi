@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+kütüphane
 </grup>
 <isim>
-blender
+bullet
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Sürekli çarpışma algılama ve fizik kütüphanesi.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bullet.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bullet
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bullet
 </silinecek_paketler>
 </uygulama>

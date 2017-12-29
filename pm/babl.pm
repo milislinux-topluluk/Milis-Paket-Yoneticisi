@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+babl
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Dynamic, any to any, pixel format conversion library
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/babl.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+babl
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+babl
 </silinecek_paketler>
 </uygulama>

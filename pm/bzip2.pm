@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+bzip2
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Programs for compressing and decompressing files.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bzip2.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bzip2
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bzip2
 </silinecek_paketler>
 </uygulama>

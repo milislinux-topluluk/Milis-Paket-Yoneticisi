@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cdparanoia
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Compact Disc Digital Audio extraction tool
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cdparanoia.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cdparanoia
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cdparanoia
 </silinecek_paketler>
 </uygulama>

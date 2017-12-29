@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+bc
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+The Bc package contains an arbitrary precision numeric processing language.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bc.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bc
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bc
 </silinecek_paketler>
 </uygulama>

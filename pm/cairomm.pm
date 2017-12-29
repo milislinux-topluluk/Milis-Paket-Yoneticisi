@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cairomm
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+C++ bindings to Cairo vector graphics library
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cairomm.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cairomm
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cairomm
 </silinecek_paketler>
 </uygulama>

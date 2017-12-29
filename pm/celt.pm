@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+celt
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Low-latency audio communication codec
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/celt.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+celt
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+celt
 </silinecek_paketler>
 </uygulama>

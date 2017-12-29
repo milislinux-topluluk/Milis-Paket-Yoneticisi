@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ
 </grup>
 <isim>
-blender
+badvpn
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+P2P vpn sistemi,ağ arayüz ayarları için ncd programlama dili
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/badvpn.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+badvpn
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+badvpn
 </silinecek_paketler>
 </uygulama>

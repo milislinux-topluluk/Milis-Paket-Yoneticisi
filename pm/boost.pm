@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+boost
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Boost paketi C++ için özgür ve taşınabilir kaynak kütüphanelerinden oluşan bir settir.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/boost.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+boost
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+boost
 </silinecek_paketler>
 </uygulama>

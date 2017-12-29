@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+medya kütüphane
 </grup>
 <isim>
-blender
+baresip
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Baresip taşınabilir,modular ses ve video destekli SIP kullanıcı uygulaması.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/baresip.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+baresip
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+baresip
 </silinecek_paketler>
 </uygulama>

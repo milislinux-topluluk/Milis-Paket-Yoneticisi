@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+bison
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+The Bison package contains a parser generator
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bison.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bison
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bison
 </silinecek_paketler>
 </uygulama>

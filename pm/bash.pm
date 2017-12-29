@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+bash
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+The Bash package contains the Bourne-Again SHell.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bash.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bash
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bash
 </silinecek_paketler>
 </uygulama>

@@ -4,18 +4,18 @@
 grafik_tasarım
 </grup>
 <isim>
-blender
+brisk-menu
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+MATE Masaüstü Ortamı için modern ve etkili bir menü.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/brisk-menu.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+brisk-menu
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+brisk-menu
 </silinecek_paketler>
 </uygulama>

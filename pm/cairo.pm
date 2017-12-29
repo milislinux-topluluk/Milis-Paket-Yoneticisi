@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cairo
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Cairo is a 2D graphics library with support for multiple output devices.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cairo.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cairo
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cairo
 </silinecek_paketler>
 </uygulama>

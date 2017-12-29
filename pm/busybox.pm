@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+busybox
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+UNIX araçlarının hafif hallerinin tek ikilide yer alması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/busybox.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+busybox
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+busybox
 </silinecek_paketler>
 </uygulama>

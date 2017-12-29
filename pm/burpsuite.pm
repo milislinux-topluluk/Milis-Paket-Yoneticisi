@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+güvenlik
 </grup>
 <isim>
-blender
+burpsuite
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Web uygulama testleri için entegre bir platform (ücretsiz sürüm).
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/burpsuite.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+burpsuite
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+burpsuite
 </silinecek_paketler>
 </uygulama>

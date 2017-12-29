@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ
 </grup>
 <isim>
-blender
+beebeep
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Güvenli lan chat uygulaması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/beebeep.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+beebeep
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+beebeep
 </silinecek_paketler>
 </uygulama>

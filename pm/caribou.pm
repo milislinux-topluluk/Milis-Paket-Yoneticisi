@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+caribou
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Bir metin girişi ve UI gezinme uygulaması (ekran klavyesi).
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/caribou.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+caribou
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+caribou
 </silinecek_paketler>
 </uygulama>

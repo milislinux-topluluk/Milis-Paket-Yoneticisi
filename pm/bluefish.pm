@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ofis_düzenleme
 </grup>
 <isim>
-blender
+bluefish
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Deneyimli web geliştiricileri ve programcılar için güçlü bir editör.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bluefish.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bluefish
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bluefish
 </silinecek_paketler>
 </uygulama>

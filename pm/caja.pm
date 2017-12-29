@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+caja
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+MATE için dosya yöneticisi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/caja.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+caja
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+caja
 </silinecek_paketler>
 </uygulama>

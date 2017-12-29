@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+ca-certificates
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Certificate Authority certificates, the Public Key Infrastructure.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/ca-certificates.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+ca-certificates
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+ca-certificates
 </silinecek_paketler>
 </uygulama>

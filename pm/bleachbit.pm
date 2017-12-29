@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+bleachbit
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Gereksiz dosyaları silerek diskte yer açar.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bleachbit.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bleachbit
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bleachbit
 </silinecek_paketler>
 </uygulama>

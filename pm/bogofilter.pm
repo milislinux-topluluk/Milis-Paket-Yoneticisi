@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ
 </grup>
 <isim>
-blender
+bogofilter
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Bayes algoritmasına göre çalışan hızlı bir spam filtresi.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bogofilter.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bogofilter
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bogofilter
 </silinecek_paketler>
 </uygulama>

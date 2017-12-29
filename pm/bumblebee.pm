@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem sürücüler
 </grup>
 <isim>
-blender
+bumblebee
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+NVIDIA VirtualGL destek uygulaması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bumblebee.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bumblebee
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bumblebee
 </silinecek_paketler>
 </uygulama>

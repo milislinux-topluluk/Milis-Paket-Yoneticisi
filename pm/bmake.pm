@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+geliştirme
 </grup>
 <isim>
-blender
+bmake
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+NetBSD make inşa aracının taşınabilir bir sürümü.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bmake.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bmake
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bmake
 </silinecek_paketler>
 </uygulama>

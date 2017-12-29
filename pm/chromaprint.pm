@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+kütüphane
 </grup>
 <isim>
-blender
+chromaprint
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Herhangi bir ses kaynağından parmak izi ayıklamak için özel bir algoritma uygular.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/chromaprint.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+chromaprint
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+chromaprint
 </silinecek_paketler>
 </uygulama>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+güvenlik
 </grup>
 <isim>
-blender
+beef
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+The Browser Exploitation Framework that focuses on the web browser
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/beef.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+beef
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+beef
 </silinecek_paketler>
 </uygulama>

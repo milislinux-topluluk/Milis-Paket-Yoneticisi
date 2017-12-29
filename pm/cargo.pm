@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cargo
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+rust paket yöneticisi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cargo.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cargo
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cargo
 </silinecek_paketler>
 </uygulama>

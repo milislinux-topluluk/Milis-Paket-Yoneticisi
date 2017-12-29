@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+beep
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Beep ses çalmak için konsol uygulaması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/beep.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+beep
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+beep
 </silinecek_paketler>
 </uygulama>

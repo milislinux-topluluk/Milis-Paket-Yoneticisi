@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+geliştirme
 </grup>
 <isim>
-blender
+brainfuck
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+brainfuck dili derleyicisi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/brainfuck.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+brainfuck
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+brainfuck
 </silinecek_paketler>
 </uygulama>

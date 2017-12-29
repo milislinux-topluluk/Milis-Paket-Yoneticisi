@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sürücüler
 </grup>
 <isim>
-blender
+brother-mfc-l2700dw
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Brother MFC-L2700DW için LPR ve CUPS sürücüsü
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/brother-mfc-l2700dw.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+brother-mfc-l2700dw
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+brother-mfc-l2700dw
 </silinecek_paketler>
 </uygulama>

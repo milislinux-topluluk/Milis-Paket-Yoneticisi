@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ
 </grup>
 <isim>
-blender
+bird
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+RIP, OSPFv2 and BGP uygulaması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bird.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bird
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bird
 </silinecek_paketler>
 </uygulama>

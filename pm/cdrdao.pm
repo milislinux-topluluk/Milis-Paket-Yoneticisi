@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cdrdao
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Records audio/data CD-Rs in disk-at-once (DAO) mode
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cdrdao.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cdrdao
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cdrdao
 </silinecek_paketler>
 </uygulama>

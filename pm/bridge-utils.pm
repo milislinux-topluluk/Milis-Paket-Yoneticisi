@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+bridge-utils
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Linux ethernet köprüleme konfigürasyonları için çeşitli araçlar.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bridge-utils.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bridge-utils
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bridge-utils
 </silinecek_paketler>
 </uygulama>

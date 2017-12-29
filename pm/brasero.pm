@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem medya
 </grup>
 <isim>
-blender
+brasero
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+CD/DVD yönetim aracı
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/brasero.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+brasero
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+brasero
 </silinecek_paketler>
 </uygulama>

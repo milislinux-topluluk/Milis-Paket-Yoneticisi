@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+bash-completion
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Bash tamamlama fonksiyonları
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bash-completion.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bash-completion
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bash-completion
 </silinecek_paketler>
 </uygulama>

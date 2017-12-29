@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+geliştirme
 </grup>
 <isim>
-blender
+bacon
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Basic dilinden C diline çevirici
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bacon.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bacon
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bacon
 </silinecek_paketler>
 </uygulama>

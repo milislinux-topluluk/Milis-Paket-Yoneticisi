@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+medya
 </grup>
 <isim>
-blender
+baka-mplayer
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Mpv tabanlı qt5 medya oynatıcısı
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/baka-mplayer.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+baka-mplayer
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+baka-mplayer
 </silinecek_paketler>
 </uygulama>

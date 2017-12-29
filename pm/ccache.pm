@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+ccache
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Binary file (standard input) matches
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/ccache.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+ccache
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+ccache
 </silinecek_paketler>
 </uygulama>

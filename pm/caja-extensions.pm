@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+caja-extensions
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Caja eklentileri
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/caja-extensions.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+caja-extensions
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+caja-extensions
 </silinecek_paketler>
 </uygulama>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+kütüphane
 </grup>
 <isim>
-blender
+capstone
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+açık kaynak assembler çözücü platformu
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/capstone.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+capstone
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+capstone
 </silinecek_paketler>
 </uygulama>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+baobab
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Bir grafik dizin ağacı çözümleyicisi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/baobab.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+baobab
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+baobab
 </silinecek_paketler>
 </uygulama>

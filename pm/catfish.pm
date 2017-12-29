@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+catfish
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Binary file (standard input) matches
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/catfish.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+catfish
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+catfish
 </silinecek_paketler>
 </uygulama>

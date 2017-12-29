@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+cdrkit
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Set of programs for CD/DVD recording, ISO image creation and audio CD extraction
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cdrkit.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cdrkit
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cdrkit
 </silinecek_paketler>
 </uygulama>

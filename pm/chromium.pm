@@ -1,39 +1,20 @@
 <?xml version="1.0"?>
-<app>
-
-<category>
-Web Tarayıcı
-</category>
-
-<name>  
-Chromium
-</name>
-
-<description>  
-Chromium web tarayıcısı
-</description>
-
-<installable>
-all
-</installable>
-
-<screenshot>https://screenshots.debian.net/screenshots/000/015/269/large.png</screenshot>
-
-<preinstall>
-
-</preinstall>
-
-<install_package_names>
+<uygulama>
+<grup>
+</grup>
+<isim>
 chromium
-</install_package_names>
-
-
-<postinstall>
-
-</postinstall>
-
-
-<uninstall_package_names>
+</isim>
+<tanim>
+Google Chrome'un arkasındaki açık kaynaklı proje, daha güvenli, daha hızlı ve daha kararlı bir tarayıcı
+</tanim>
+<ekran_resmi>
+file:///tmp/chromium.png
+</ekran_resmi>
+<kurulacak_paketler>
 chromium
-</uninstall_package_names>
-</app>
+</kurulacak_paketler>
+<silinecek_paketler>
+chromium
+</silinecek_paketler>
+</uygulama>

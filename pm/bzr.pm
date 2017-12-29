@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+geliştirme
 </grup>
 <isim>
-blender
+bzr
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Bağımsız (decentralized) revizyon kontrol sistemi. (Bazaar)
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bzr.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bzr
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bzr
 </silinecek_paketler>
 </uygulama>

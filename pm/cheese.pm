@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+medya
 </grup>
 <isim>
-blender
+cheese
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Fotoğraf ve video çekmek için web kameranızı kullanın, fantezi özel efektler uygulayın ve eğlencenizi başkaları ile paylaşın.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/cheese.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+cheese
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+cheese
 </silinecek_paketler>
 </uygulama>

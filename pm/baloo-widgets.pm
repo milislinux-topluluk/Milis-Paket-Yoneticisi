@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+baloo-widgets
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Parts of framework 5
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/baloo-widgets.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+baloo-widgets
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+baloo-widgets
 </silinecek_paketler>
 </uygulama>

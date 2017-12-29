@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+binutils
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Linker, assembler, and other tools for handling object files.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/binutils.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+binutils
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+binutils
 </silinecek_paketler>
 </uygulama>

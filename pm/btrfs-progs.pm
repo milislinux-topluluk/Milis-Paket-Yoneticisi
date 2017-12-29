@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+btrfs-progs
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Btrfs filesystem utilities
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/btrfs-progs.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+btrfs-progs
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+btrfs-progs
 </silinecek_paketler>
 </uygulama>

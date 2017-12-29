@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
 </grup>
 <isim>
-blender
+blueman
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+A GTK+ Bluetooth Yöneticisi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/blueman.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+blueman
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+blueman
 </silinecek_paketler>
 </uygulama>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem geliştirme
 </grup>
 <isim>
-blender
+bam
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Lua ile yazılmış hızlı ve esnek derleme sistemi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bam.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bam
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bam
 </silinecek_paketler>
 </uygulama>

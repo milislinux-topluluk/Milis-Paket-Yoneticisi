@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+belirsiz
 </grup>
 <isim>
-blender
+bamf
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Uygulama eşleme çerçevesi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bamf.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bamf
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bamf
 </silinecek_paketler>
 </uygulama>

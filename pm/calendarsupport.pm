@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+kde sistem
 </grup>
 <isim>
-blender
+calendarsupport
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+KDE icin takvim destegi
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/calendarsupport.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+calendarsupport
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+calendarsupport
 </silinecek_paketler>
 </uygulama>

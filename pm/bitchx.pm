@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ
 </grup>
 <isim>
-blender
+bitchx
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+BitchX is an IRC (Internet Relay Chat) client.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bitchx.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bitchx
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bitchx
 </silinecek_paketler>
 </uygulama>

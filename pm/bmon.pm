@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+ağ sistem
 </grup>
 <isim>
-blender
+bmon
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Ağ bant genişliği göstergesi.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bmon.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bmon
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bmon
 </silinecek_paketler>
 </uygulama>

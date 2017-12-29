@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+geliştirme
 </grup>
 <isim>
-blender
+camlp4
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Camlp4 tool
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/camlp4.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+camlp4
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+camlp4
 </silinecek_paketler>
 </uygulama>

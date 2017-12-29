@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+binwalk
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Gömülü (embedded) dosyalarda binary görüntüyü aramak için kullanılan bir araç.
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/binwalk.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+binwalk
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+binwalk
 </silinecek_paketler>
 </uygulama>

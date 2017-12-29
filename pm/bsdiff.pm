@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+sistem
 </grup>
 <isim>
-blender
+bsdiff
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+bsdiff,bspatch ikili dosyalar için fark ve yama uygulaması
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/bsdiff.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+bsdiff
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+bsdiff
 </silinecek_paketler>
 </uygulama>

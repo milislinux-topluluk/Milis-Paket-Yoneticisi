@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
-grafik_tasarım
+kütüphane
 </grup>
 <isim>
-blender
+chmlib
 </isim>
 <tanim>
-Tamamen entegre bir 3B grafik oluşturma paketi
+Microsoft ITSS/CHM formatinda dosyalar icin kutuphane
 </tanim>
 <ekran_resmi>
-file:///tmp/blender.png
+file:///tmp/chmlib.png
 </ekran_resmi>
 <kurulacak_paketler>
-blender
+chmlib
 </kurulacak_paketler>
 <silinecek_paketler>
-blender
+chmlib
 </silinecek_paketler>
 </uygulama>
