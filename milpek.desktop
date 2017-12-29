@@ -23,6 +23,6 @@ Comment[sv]=
 Exec=sudo milpek
 Terminal=false
 Type=Application
-Icon=milpek
+Icon=/usr/share/milpek/simge/logo.png
 Categories=System;MX-Software;
 NoDisplay=false
