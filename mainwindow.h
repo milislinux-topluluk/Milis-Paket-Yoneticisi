@@ -119,11 +119,7 @@ private slots:
     void on_buttonForceUpdate_clicked();
     void on_checkHideLibs_clicked(bool checked);
     void on_buttonUpgradeAll_clicked();
-
-    void on_radioStable_clicked();
-
     void on_pushButton_clicked();
-
     void on_mps_guncelle_buton_clicked();
 
 private:
