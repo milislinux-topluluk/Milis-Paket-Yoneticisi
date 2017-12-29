@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+akonadi-contacts
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Akonadi contacts
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi-contacts.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi-contacts
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi-contacts
 </silinecek_paketler>
 </uygulama>

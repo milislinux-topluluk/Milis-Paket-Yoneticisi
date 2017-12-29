@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+attr
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Utilities to administer the extended attributes on filesystem objects
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/attr.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+attr
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+attr
 </silinecek_paketler>
 </uygulama>

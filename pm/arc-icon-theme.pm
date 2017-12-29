@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+grafik_tasarım
 </grup>
 <isim>
-audacity
+arc-icon-theme
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Arc teması için gerekli ikon teması (deneme aşamasındadır).
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/arc-icon-theme.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+arc-icon-theme
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+arc-icon-theme
 </silinecek_paketler>
 </uygulama>

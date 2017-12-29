@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+atkmm
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Atkmm is the official C++ interface for the ATK accessibility toolkit library.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/atkmm.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+atkmm
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+atkmm
 </silinecek_paketler>
 </uygulama>

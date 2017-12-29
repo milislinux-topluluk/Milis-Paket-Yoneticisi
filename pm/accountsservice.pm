@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+accountsservice
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Description="Accessing the list of user accounts and information attached to those accounts."
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/accountsservice.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+accountsservice
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+accountsservice
 </silinecek_paketler>
 </uygulama>

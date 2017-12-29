@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+kütüphane
 </grup>
 <isim>
-audacity
+asio
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Cross-platform C++ library for ASynchronous network I/O
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/asio.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+asio
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+asio
 </silinecek_paketler>
 </uygulama>

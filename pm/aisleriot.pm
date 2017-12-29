@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+oyunlar
 </grup>
 <isim>
-audacity
+aisleriot
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Guile şemasında yazılmış sabır oyunları topluluğu
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aisleriot.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aisleriot
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aisleriot
 </silinecek_paketler>
 </uygulama>

@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+anydesk
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Uzaktan Destek için Bir Hepsi Bir Arada Yazılım.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/anydesk.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+anydesk
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+anydesk
 </silinecek_paketler>
 </uygulama>

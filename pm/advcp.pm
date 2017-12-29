@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+advcp
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+cp ve mv komutlarının ilerleme çubuğu (progressbar) için yamalanmış versiyonu.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/advcp.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+advcp
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+advcp
 </silinecek_paketler>
 </uygulama>

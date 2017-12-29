@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+alsa-lib
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+An alternative implementation of Linux sound support
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/alsa-lib.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+alsa-lib
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+alsa-lib
 </silinecek_paketler>
 </uygulama>

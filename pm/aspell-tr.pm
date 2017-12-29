@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+aspell-tr
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Turkish dictionaries for Aspell
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aspell-tr.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aspell-tr
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aspell-tr
 </silinecek_paketler>
 </uygulama>

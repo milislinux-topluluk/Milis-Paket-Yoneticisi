@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+autoconf2
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+A GNU tool for automatically configuring source code (Legacy 2.1x version)
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/autoconf2.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+autoconf2
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+autoconf2
 </silinecek_paketler>
 </uygulama>

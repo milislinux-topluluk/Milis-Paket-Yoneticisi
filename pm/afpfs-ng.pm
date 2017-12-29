@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+kütüphane
 </grup>
 <isim>
-audacity
+afpfs-ng
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Apple Dosyalama Protokol (AFP) kütüphanesi.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/afpfs-ng.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+afpfs-ng
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+afpfs-ng
 </silinecek_paketler>
 </uygulama>

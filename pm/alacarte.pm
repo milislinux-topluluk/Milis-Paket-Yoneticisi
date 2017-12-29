@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+alacarte
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+GNOME için menü düzenleyici
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/alacarte.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+alacarte
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+alacarte
 </silinecek_paketler>
 </uygulama>

@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+alsa-plugins
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Extra alsa plugins
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/alsa-plugins.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+alsa-plugins
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+alsa-plugins
 </silinecek_paketler>
 </uygulama>

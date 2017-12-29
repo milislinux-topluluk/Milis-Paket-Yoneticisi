@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+ağ
 </grup>
 <isim>
-audacity
+amule
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Çoklu platform P2P dosya paylaşım istemcisi.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/amule.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+amule
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+amule
 </silinecek_paketler>
 </uygulama>

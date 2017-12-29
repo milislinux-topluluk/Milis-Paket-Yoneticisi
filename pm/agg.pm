@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+kütüphane
 </grup>
 <isim>
-audacity
+agg
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Anti-Grain Geometry (AGG) 2D grafik kütüphanesi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/agg.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+agg
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+agg
 </silinecek_paketler>
 </uygulama>

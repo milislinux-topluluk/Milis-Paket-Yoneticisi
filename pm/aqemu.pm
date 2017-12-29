@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+aqemu
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Qt5 ile yazılmış bir QEMU arayüzü
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aqemu.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aqemu
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aqemu
 </silinecek_paketler>
 </uygulama>

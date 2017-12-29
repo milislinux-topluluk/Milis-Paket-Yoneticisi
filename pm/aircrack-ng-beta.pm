@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+güvenlik
 </grup>
 <isim>
-audacity
+aircrack-ng-beta
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+802.11 WEP ve WPA-PSK protokolleri için key cracker.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aircrack-ng-beta.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aircrack-ng-beta
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aircrack-ng-beta
 </silinecek_paketler>
 </uygulama>

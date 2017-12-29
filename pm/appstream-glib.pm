@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+kütüphane
 </grup>
 <isim>
-audacity
+appstream-glib
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Kitaplık AppStream meta verilerini okumak ve yazmak için.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/appstream-glib.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+appstream-glib
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+appstream-glib
 </silinecek_paketler>
 </uygulama>

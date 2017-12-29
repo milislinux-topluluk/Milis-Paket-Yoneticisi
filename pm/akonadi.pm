@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+akonadi
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+PIM layer, which provides an asynchronous API to access all kind of PIM data
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi
 </silinecek_paketler>
 </uygulama>

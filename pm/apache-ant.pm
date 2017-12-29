@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+geliştirme
 </grup>
 <isim>
-audacity
+apache-ant
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Ant paketi Java tabanlı bir inşa aracıdır.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/apache-ant.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+apache-ant
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+apache-ant
 </silinecek_paketler>
 </uygulama>

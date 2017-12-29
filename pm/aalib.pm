@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+aalib
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+AAlib is an portable ascii art GFX library.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aalib.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aalib
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aalib
 </silinecek_paketler>
 </uygulama>

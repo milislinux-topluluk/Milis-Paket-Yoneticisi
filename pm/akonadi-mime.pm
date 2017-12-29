@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+akonadi-mime
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Akonadi mime
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi-mime.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi-mime
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi-mime
 </silinecek_paketler>
 </uygulama>

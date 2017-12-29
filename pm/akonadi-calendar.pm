@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+akonadi-calendar
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Akonadi takvim eklentisi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi-calendar.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi-calendar
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi-calendar
 </silinecek_paketler>
 </uygulama>

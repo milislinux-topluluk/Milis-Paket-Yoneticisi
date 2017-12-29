@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+awesome
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+yüksek derece ayarlanabilir pencere yöneticisi altyapısı
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/awesome.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+awesome
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+awesome
 </silinecek_paketler>
 </uygulama>

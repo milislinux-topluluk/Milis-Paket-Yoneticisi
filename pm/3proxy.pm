@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+ağ
 </grup>
 <isim>
-audacity
+3proxy
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Her ortam için hafif vekil sunucu
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/3proxy.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+3proxy
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+3proxy
 </silinecek_paketler>
 </uygulama>

@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+0d1n
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Binary file (standard input) matches
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/0d1n.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+0d1n
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+0d1n
 </silinecek_paketler>
 </uygulama>

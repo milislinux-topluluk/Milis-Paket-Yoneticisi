@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+güvenlik
 </grup>
 <isim>
-audacity
+aircrack-ng
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+WEP ve WPA için kablosuz şifresi çözmek için bir yardımcı araç.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aircrack-ng.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aircrack-ng
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aircrack-ng
 </silinecek_paketler>
 </uygulama>

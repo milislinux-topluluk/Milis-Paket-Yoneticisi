@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+akiskart
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Binary file (standard input) matches
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akiskart.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akiskart
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akiskart
 </silinecek_paketler>
 </uygulama>

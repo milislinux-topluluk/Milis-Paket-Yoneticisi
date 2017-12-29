@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+asciidoc
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Kısa metinler, dokümanlar ve UNIX man sayfaları için belge formatı.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/asciidoc.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+asciidoc
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+asciidoc
 </silinecek_paketler>
 </uygulama>

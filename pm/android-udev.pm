@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+android-udev
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+android cihazlar için udev kuralları
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/android-udev.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+android-udev
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+android-udev
 </silinecek_paketler>
 </uygulama>

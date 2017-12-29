@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+aufs-utils
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+aufs-utils
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aufs-utils.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aufs-utils
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aufs-utils
 </silinecek_paketler>
 </uygulama>

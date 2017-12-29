@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+automake
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Contains programs for generating Makefiles for use with Autoconf.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/automake.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+automake
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+automake
 </silinecek_paketler>
 </uygulama>

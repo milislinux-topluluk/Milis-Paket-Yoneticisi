@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+medya
 </grup>
 <isim>
-audacity
+audacious-plugins
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Audacious müzik çalar için eklentiler.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/audacious-plugins.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+audacious-plugins
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+audacious-plugins
 </silinecek_paketler>
 </uygulama>

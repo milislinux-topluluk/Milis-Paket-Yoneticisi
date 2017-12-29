@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+avahi
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Binary file (standard input) matches
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/avahi.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+avahi
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+avahi
 </silinecek_paketler>
 </uygulama>

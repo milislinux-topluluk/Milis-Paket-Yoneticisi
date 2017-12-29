@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+apr-util
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Apache Portable Runtime Utility Library
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/apr-util.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+apr-util
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+apr-util
 </silinecek_paketler>
 </uygulama>

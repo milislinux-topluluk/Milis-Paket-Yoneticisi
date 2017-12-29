@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+at-spi2-core
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Protocol definitions and daemon for D-Bus at-spi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/at-spi2-core.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+at-spi2-core
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+at-spi2-core
 </silinecek_paketler>
 </uygulama>

@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+ağ
 </grup>
 <isim>
-audacity
+apache
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Açık kaynak web sunucusu.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/apache.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+apache
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+apache
 </silinecek_paketler>
 </uygulama>

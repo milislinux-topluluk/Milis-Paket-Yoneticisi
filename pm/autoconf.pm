@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+autoconf
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+For producing shell scripts that can automatically configure source code.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/autoconf.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+autoconf
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+autoconf
 </silinecek_paketler>
 </uygulama>

@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+acl
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+description="Commands for Manipulating POSIX Access Control Lists."
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/acl.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+acl
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+acl
 </silinecek_paketler>
 </uygulama>

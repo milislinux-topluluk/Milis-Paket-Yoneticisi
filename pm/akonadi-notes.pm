@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+sistem
 </grup>
 <isim>
-audacity
+akonadi-notes
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Akonadi notlar eklentisi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi-notes.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi-notes
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi-notes
 </silinecek_paketler>
 </uygulama>

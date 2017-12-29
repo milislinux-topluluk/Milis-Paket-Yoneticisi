@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+araçlar
 </grup>
 <isim>
-audacity
+atool
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+çeşitli dosya arşivleri yönetmek için bir betik.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/atool.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+atool
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+atool
 </silinecek_paketler>
 </uygulama>

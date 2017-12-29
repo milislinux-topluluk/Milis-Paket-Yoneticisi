@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+atril
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+MATE belge görüntüleyici
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/atril.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+atril
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+atril
 </silinecek_paketler>
 </uygulama>

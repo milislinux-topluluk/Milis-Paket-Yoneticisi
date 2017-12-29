@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+alsa-utils
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Utilities for configuring and using ALSA
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/alsa-utils.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+alsa-utils
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+alsa-utils
 </silinecek_paketler>
 </uygulama>

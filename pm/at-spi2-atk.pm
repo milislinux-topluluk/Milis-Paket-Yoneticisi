@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+at-spi2-atk
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+A GTK+ module that bridges ATK to D-Bus at-spi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/at-spi2-atk.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+at-spi2-atk
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+at-spi2-atk
 </silinecek_paketler>
 </uygulama>

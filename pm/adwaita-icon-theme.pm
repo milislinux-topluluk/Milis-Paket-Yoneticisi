@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+adwaita-icon-theme
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Adwaita ikon teması.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/adwaita-icon-theme.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+adwaita-icon-theme
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+adwaita-icon-theme
 </silinecek_paketler>
 </uygulama>

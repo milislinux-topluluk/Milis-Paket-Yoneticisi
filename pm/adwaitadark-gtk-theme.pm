@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+grafik_tasarım
 </grup>
 <isim>
-audacity
+adwaitadark-gtk-theme
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Koyu bir gtk2 teması
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/adwaitadark-gtk-theme.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+adwaitadark-gtk-theme
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+adwaitadark-gtk-theme
 </silinecek_paketler>
 </uygulama>

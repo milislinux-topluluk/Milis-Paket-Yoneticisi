@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+autoconf-archive
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Serbestçe yeniden kullanılabilir Autoconf makroları topluluğu
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/autoconf-archive.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+autoconf-archive
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+autoconf-archive
 </silinecek_paketler>
 </uygulama>

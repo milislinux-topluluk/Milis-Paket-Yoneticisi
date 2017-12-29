@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+güvenlik
 </grup>
 <isim>
-audacity
+armitage
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Metasploit için grafiksel yönetim aracı.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/armitage.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+armitage
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+armitage
 </silinecek_paketler>
 </uygulama>

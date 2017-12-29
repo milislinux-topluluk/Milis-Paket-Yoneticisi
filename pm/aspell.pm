@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+aspell
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+An interactive spell checking program and the Aspell libraries.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aspell.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aspell
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aspell
 </silinecek_paketler>
 </uygulama>

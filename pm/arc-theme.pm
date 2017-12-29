@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+grafik_tasarım
 </grup>
 <isim>
-audacity
+arc-theme
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+GTK 3, GTK 2 ve Gnome-Shell için şeffaf öğeler içeren düz bir tema.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/arc-theme.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+arc-theme
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+arc-theme
 </silinecek_paketler>
 </uygulama>

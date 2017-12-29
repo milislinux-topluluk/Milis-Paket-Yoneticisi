@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+ağ
 </grup>
 <isim>
-audacity
+arping-th
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+ARP Ping uygulaması- Thomas Habets
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/arping-th.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+arping-th
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+arping-th
 </silinecek_paketler>
 </uygulama>

@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+geliştirme
 </grup>
 <isim>
-audacity
+android-sdk-build-tools
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Google Android SDK için araçlar oluşturun (aapt, aidl, dexdump, dx, llvm-rs-cc)
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/android-sdk-build-tools.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+android-sdk-build-tools
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+android-sdk-build-tools
 </silinecek_paketler>
 </uygulama>

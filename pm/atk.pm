@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+atk
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+A library providing a set of interfaces for accessibility
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/atk.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+atk
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+atk
 </silinecek_paketler>
 </uygulama>

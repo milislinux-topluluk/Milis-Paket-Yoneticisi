@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+argon2
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+The password hash Argon2, winner of PHC
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/argon2.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+argon2
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+argon2
 </silinecek_paketler>
 </uygulama>

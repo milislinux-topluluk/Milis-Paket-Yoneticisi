@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+güvenlik
 </grup>
 <isim>
-audacity
+arachni
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Web uygulama güvenliği için modüler pentest aracı.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/arachni.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+arachni
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+arachni
 </silinecek_paketler>
 </uygulama>

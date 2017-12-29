@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+ağ
 </grup>
 <isim>
-audacity
+aria2
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Komut satırı tabanlı durdurma ve dilimli indirme özellikleri olan hızlı bir indirme yöneticisi.
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aria2.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aria2
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aria2
 </silinecek_paketler>
 </uygulama>

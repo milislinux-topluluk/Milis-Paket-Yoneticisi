@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+kütüphane
 </grup>
 <isim>
-audacity
+aspcud
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Paket bağımlılık çözücü
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/aspcud.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+aspcud
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+aspcud
 </silinecek_paketler>
 </uygulama>

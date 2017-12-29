@@ -3,18 +3,18 @@
 <grup>
 </grup>
 <isim>
-audacity
+akonadi-search
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Libraries and daemons to implement searching in Akonadi
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/akonadi-search.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+akonadi-search
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+akonadi-search
 </silinecek_paketler>
 </uygulama>

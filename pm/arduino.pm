@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <uygulama>
 <grup>
+geliştirme
 </grup>
 <isim>
-audacity
+arduino
 </isim>
 <tanim>
-A program that lets you manipulate digital audio waveforms
+Arduino prototiplendirme kartı için geliştirici kiti (SDK).
 </tanim>
 <ekran_resmi>
-file:///tmp/audacity.png
+file:///tmp/arduino.png
 </ekran_resmi>
 <kurulacak_paketler>
-audacity
+arduino
 </kurulacak_paketler>
 <silinecek_paketler>
-audacity
+arduino
 </silinecek_paketler>
 </uygulama>
