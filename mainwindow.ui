@@ -43,7 +43,7 @@
        </sizepolicy>
       </property>
       <attribute name="title">
-       <string>Sık Kullanılan Uygulamalar</string>
+       <string>Milis Deposu Uygulamaları</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout">
        <item row="3" column="0" colspan="5">
