@@ -368,7 +368,8 @@ void MainWindow::displayPopularApps()
         // Kurulu paketler mavi görünsün
         if (checkInstalled(uninstall_names)) {
             childItem->setForeground(2, QBrush(Qt::blue));
-            childItem->setForeground(4, QBrush(Qt::blue));
+            childItem->setForeground(3, QBrush(Qt::blue));
+            childItem->setForeground(5, QBrush(Qt::blue));
         }
     }
     for (int i = 0; i < 5; ++i) {
@@ -771,7 +772,7 @@ bool MainWindow::buildPackageLists(bool force_download)
     return true;
 }
 
-// Packages.gz dosyalarını kaynaklardan indirin
+// Paketler.gz dosyalarını kaynaklardan indirin
 bool MainWindow::downloadPackageList(bool force_download)
 {
     if (!checkOnline()) {
@@ -838,7 +839,7 @@ bool MainWindow::downloadPackageList(bool force_download)
     return true;
 }
 
-// Process downloaded *Packages.gz files
+//  *Paketler.gz dosyası indirme süreci
 bool MainWindow::readPackageList(bool force_download)
 {
     QFile file;
@@ -864,7 +865,7 @@ bool MainWindow::readPackageList(bool force_download)
              file.setFileName(tmp_dir + "/TumPaketler");
          }
          if(!file.open(QFile::ReadOnly)) {
-             qDebug() << "Count not open file: " << file.fileName();
+             qDebug() << "Dosya açılamadı: " << file.fileName();
              return false;
          }
          QString file_content = file.readAll();
@@ -936,18 +937,18 @@ void MainWindow::copyTree(QTreeWidget *from, QTreeWidget *to)
     }
 }
 
-// Cleanup environment when window is closed
+// Program kapatılırken ortamı temizle
 void MainWindow::cleanup()
 {
     qDebug() << "cleanup code";
     if(!cmd->terminate()) {
         cmd->kill();
     }
-    qDebug() << "removing lock";
+    qDebug() << "kilit siliniyor";
     lock_file->unlock();
     QDir::setCurrent("/");
     if (tmp_dir.startsWith("/tmp/milis-")) {
-        qDebug() << "removing tmp folder";
+        qDebug() << "tmp klasörü siliniyor";
         system("rm -r " + tmp_dir.toUtf8());
     }
 }
@@ -960,7 +961,7 @@ void MainWindow::clearCache()
     tree_backports->clear();
     app_info_list.clear();
     if (!QFile::remove(tmp_dir + "/listapps")) {
-        qDebug() << "could not remove listapps file";
+        qDebug() << "listapps dosyası kaldırılamadı";
     }
     qDebug() << "tree cleared";
 }
@@ -1065,7 +1066,7 @@ void MainWindow::displayInfo(QTreeWidgetItem *item, int column)
         QUrl url = item->text(8); // Ekran resmi linki
 
         if (!url.isValid() || url.isEmpty() || url.url() == "none") {
-            qDebug() << "no screenshot for: " << title;
+            qDebug() << "Ekran resmi yok: " << title;
         } else {
             QNetworkAccessManager *manager = new QNetworkAccessManager(this);
             QNetworkReply* reply = manager->get(QNetworkRequest(url));
@@ -1081,7 +1082,7 @@ void MainWindow::displayInfo(QTreeWidgetItem *item, int column)
 
             if (reply->error())
             {
-                qDebug() << "Download of " << url.url() << " failed: " << qPrintable(reply->errorString());
+                qDebug() << "Dosya " << url.url() << " adresinden indirilemedi: " << qPrintable(reply->errorString());
             } else {
                 QImage image;
                 QByteArray data;
