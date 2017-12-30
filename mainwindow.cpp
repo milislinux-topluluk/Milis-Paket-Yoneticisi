@@ -71,7 +71,7 @@ void MainWindow::setup()
     this->setWindowTitle(tr("MiLPeK - Milis Program Ekle-Kaldır"));
     ui->tabWidget->setCurrentIndex(0);
     QStringList column_names;
-    column_names << "" << "" << tr("Paket Adı") << tr("Bilgi") << tr("Tanım");
+    column_names << "" << "" << tr("Paket Adı") << tr("Sürüm") << tr("Bilgi") << tr("Tanım");
     ui->treePopularApps->setHeaderLabels(column_names);
     ui->treeOther->hideColumn(5); // Pakette durum: kurulu, yükseltilebilir, vb.
     ui->treeOther->hideColumn(6); // Görüntülenen durum true / false
@@ -95,7 +95,7 @@ void MainWindow::uninstall(const QString &names)
 {
     this->hide();
     lock_file->unlock();
-    qDebug() << "uninstall list: " << names;
+    qDebug() << "silinecekler listesi: " << names;
     QString title = tr("Paketler kaldırılıyor...");
     cmd->run("xterm -T '" + title + "' -e mps sil " + names);
     lock_file->lock();
@@ -196,7 +196,7 @@ void MainWindow::loadPmFiles()
             qDebug() << "Could not open: " << file.fileName();
         } else {
             if (!doc.setContent(&file)) {
-                qDebug() << "Could not load document: " << file_name << "-- not valid XML?";
+                qDebug() << "Doküman yüklenemedi: " << file_name << "-- XML dosyası geçersiz?";
             } else {
                 processDoc(doc);
             }
@@ -218,6 +218,8 @@ void MainWindow::processDoc(const QDomDocument &doc)
         6 "install_package_names"
         7 "postinstall"
         8 "uninstall_package_names"
+        9 "paketci"
+        10 "sürüm"
     */
 
     QString category;
@@ -228,6 +230,7 @@ void MainWindow::processDoc(const QDomDocument &doc)
     QString preinstall;
     QString postinstall;
     QString paketci;
+    QString surum;
     QString install_names;
     QString uninstall_names;
     QStringList list;
@@ -255,6 +258,8 @@ void MainWindow::processDoc(const QDomDocument &doc)
             postinstall = element.text().trimmed();
         } else if (element.tagName() == "paketci") {
             paketci = element.text().trimmed();
+        } else if (element.tagName() == "surum") {
+            surum = element.text().trimmed();
         } else if (element.tagName() == "silinecek_paketler") {
             uninstall_names = element.text().trimmed();
         }
@@ -264,7 +269,7 @@ void MainWindow::processDoc(const QDomDocument &doc)
         return;
     }
     list << category << name << description << installable << screenshot << preinstall
-         << postinstall << install_names << uninstall_names<< paketci;
+         << postinstall << install_names << uninstall_names << paketci << surum;
     popular_apps << list;
 }
 
@@ -314,6 +319,7 @@ void MainWindow::displayPopularApps()
         QString preinstall = list.at(5);
         QString postinstall = list.at(6);
         QString paketci = list.at(9);
+        QString surum = list.at(10);
         QString install_names = list.at(7);
         QString uninstall_names = list.at(8);
 
@@ -327,38 +333,42 @@ void MainWindow::displayPopularApps()
             font.setBold(true);
             //topLevelItem->setForeground(2, QBrush(Qt::darkGreen));
             topLevelItem->setFont(2, font);
-            topLevelItem->setIcon(0, QIcon::fromTheme("folder-green"));
+            topLevelItem->setIcon(0, QIcon::fromTheme("folder-green", QIcon(":/simge/klasor.png")));
         } else {
             topLevelItem = ui->treePopularApps->findItems(category, Qt::MatchFixedString, 2).at(0); //find first match; add the child there
         }
         // add package name as childItem to treePopularApps
         childItem = new QTreeWidgetItem(topLevelItem);
         childItem->setText(2, name);
-        childItem->setIcon(3, QIcon::fromTheme("info", QIcon(":/simge/bilgi.png")));
+        childItem->setText(3, surum);
+        childItem->setIcon(4, QIcon::fromTheme("info", QIcon(":/simge/bilgi.png")));
 
-        // add checkboxes
+        // Seçim kutusu ekle
         childItem->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
         childItem->setCheckState(1, Qt::Unchecked);
 
-        // add description from file
-        childItem->setText(4, description);
+        // Dosyadan tanım ekle
+        childItem->setText(5, description);
 
         // add install_names (not displayed)
-        childItem->setText(5, install_names);
+        childItem->setText(6, install_names);
 
         // add uninstall_names (not displayed)
-        childItem->setText(6, uninstall_names);
+        childItem->setText(7, uninstall_names);
 
         // Ekran resmi linki ekle (not displayed)
-        childItem->setText(7, screenshot);
+        childItem->setText(8, screenshot);
 
         // Paketçi ekle (not displayed)
         childItem->setText(9, paketci);
 
-        // gray out installed items
+        // Paketçi ekle (not displayed)
+        childItem->setText(10, surum);
+
+        // Kurulu paketler mavi görünsün
         if (checkInstalled(uninstall_names)) {
-            childItem->setForeground(2, QBrush(Qt::gray));
-            childItem->setForeground(4, QBrush(Qt::gray));
+            childItem->setForeground(2, QBrush(Qt::blue));
+            childItem->setForeground(4, QBrush(Qt::blue));
         }
     }
     for (int i = 0; i < 5; ++i) {
@@ -482,8 +492,8 @@ void MainWindow::displayPackages(bool force_refresh)
             inst_count++;
             if (installed >= repocandidate) {
                 for (int i = 0; i < ui->treeOther->columnCount(); ++i) {
-                    (*it)->setForeground(2, QBrush(Qt::gray));
-                    (*it)->setForeground(4, QBrush(Qt::gray));
+                    (*it)->setForeground(2, QBrush(Qt::blue));
+                    (*it)->setForeground(4, QBrush(Qt::blue));
                     (*it)->setToolTip(i, tr("En son sürüm ") + installed.toString() + tr(" zaten kurulu"));
                 }
                 (*it)->setText(5, "installed");
@@ -1041,17 +1051,18 @@ void MainWindow::disableWarning(bool checked)
 // Paketin "bilgi" simgesini tıklattığınızda bilgileri gösterin
 void MainWindow::displayInfo(QTreeWidgetItem *item, int column)
 {
-    if (column == 3 && item->childCount() == 0) {
-        QString desc = item->text(4);
-        QString install_names = item->text(5);
+    if (column == 4 && item->childCount() == 0) {
+        QString desc = item->text(5);
+        QString install_names = item->text(6);
         QString paketci = item->text(9);
+        QString surum = item->text(10);
         QString title = item->text(2);
         QString msg = "<b>" + title + "</b><p>" + desc + "<p>" ;
         if (install_names != 0) {
-            msg += tr("Yüklenecek paketler: ") + install_names + "</b><p>"+tr("Paketi Hazırlayan: ") + paketci;
+            msg += tr("Paket Sürümü: ") + surum + "</b><p>"+tr("Paketi Hazırlayan: ") + paketci;
 
         }
-        QUrl url = item->text(7); // Ekrn resmi linki
+        QUrl url = item->text(8); // Ekran resmi linki
 
         if (!url.isValid() || url.isEmpty() || url.url() == "none") {
             qDebug() << "no screenshot for: " << title;
@@ -1078,7 +1089,7 @@ void MainWindow::displayInfo(QTreeWidgetItem *item, int column)
                 QImageReader imageReader(reply);
                 image = imageReader.read();
                 if (imageReader.error()) {
-                    qDebug() << "loading screenshot: " << imageReader.errorString();
+                    qDebug() << "Ekran resmi yukleniyor: " << imageReader.errorString();
                 } else {
                     image = image.scaled(QSize(200,300), Qt::KeepAspectRatioByExpanding);
                     image.save(&buffer, "PNG");
@@ -1186,7 +1197,7 @@ void MainWindow::on_buttonAbout_clicked()
     msgBox.addButton(tr("Lisans"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("İptal"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
-        system("firefox file:///usr/share/doc/milpek/license.html '" + tr("Milis Program Ekle-Kaldır").toUtf8() + " " + tr("Lisans").toUtf8() + "'");
+        system("firefox file:///usr/share/milpek/license.html '" + tr("Milis Program Ekle-Kaldır").toUtf8() + " " + tr("Lisans").toUtf8() + "'");
     }
     this->show();
 }
@@ -1216,7 +1227,7 @@ void MainWindow::on_treePopularApps_itemClicked()
     while (*it) {
         if ((*it)->checkState(1) == Qt::Checked) {
             checked = true;
-            if ((*it)->foreground(2) != Qt::gray) {
+            if ((*it)->foreground(2) != Qt::blue) {
                 installed = false;
             }
         }
@@ -1239,16 +1250,16 @@ void MainWindow::on_treePopularApps_itemExpanded(QTreeWidgetItem *item)
     ui->treePopularApps->resizeColumnToContents(4);
 }
 
-// Tree item collapsed
+// Ağaç öğesi daraltılmış
 void MainWindow::on_treePopularApps_itemCollapsed(QTreeWidgetItem *item)
 {
-    item->setIcon(0, QIcon::fromTheme("folder-green"));
+    item->setIcon(0, QIcon::fromTheme("folder-green", QIcon(":/klasor/bilgi.png")));
     ui->treePopularApps->resizeColumnToContents(2);
     ui->treePopularApps->resizeColumnToContents(4);
 }
 
 
-// Uninstall clicked
+// Sil butonuna tıklandığında
 void MainWindow::on_buttonUninstall_clicked()
 {
     QString names;
@@ -1266,7 +1277,7 @@ void MainWindow::on_buttonUninstall_clicked()
     uninstall(names);
 }
 
-// Actions on switching the tabs
+// Sekmeleri değiştirmeye yönelik eylemler
 void MainWindow::on_tabWidget_currentChanged(int index)
 {
     if (index == 1) {
@@ -1313,7 +1324,7 @@ void MainWindow::on_tabWidget_currentChanged(int index)
 }
 
 
-// Filter items according to selected filter
+// Öğeleri seçilen filtreye göre filtreleme
 void MainWindow::on_comboFilter_activated(const QString &arg1)
 {
     QList<QTreeWidgetItem *> found_items;
@@ -1322,7 +1333,7 @@ void MainWindow::on_comboFilter_activated(const QString &arg1)
 
     if (arg1 == tr("Tüm Paketler")) {
         while (*it) {
-            (*it)->setText(6, "true"); // Displayed flag
+            (*it)->setText(6, "true"); // Görüntülenen bayrak
             (*it)->setHidden(false);
             ++it;
         }
@@ -1456,6 +1467,7 @@ void MainWindow::on_buttonUpgradeAll_clicked()
 void MainWindow::on_pushButton_clicked()
 {
  ui->pushButton->setDisabled(true);
+ QMessageBox::information(this, "MilPeK"," Bu işlem birkaç dakika sürecek. Lütfen bekleyiniz.");
  QProcess::execute("/usr/share/milpek/pm/pm_olustur.sh &");
 }
 

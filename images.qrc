@@ -7,5 +7,6 @@
         <file>simge/bilgi.png</file>
         <file>simge/vtguncelle.png</file>
         <file>simge/mpsguncelle.png</file>
+        <file>simge/klasor.png</file>
     </qresource>
 </RCC>
