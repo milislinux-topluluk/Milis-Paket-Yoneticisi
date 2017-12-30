@@ -5,5 +5,7 @@
     <qresource prefix="/">
         <file>simge/guncelle.png</file>
         <file>simge/bilgi.png</file>
+        <file>simge/vtguncelle.png</file>
+        <file>simge/mpsguncelle.png</file>
     </qresource>
 </RCC>

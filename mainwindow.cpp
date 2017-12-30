@@ -227,6 +227,7 @@ void MainWindow::processDoc(const QDomDocument &doc)
     QString screenshot;
     QString preinstall;
     QString postinstall;
+    QString paketci;
     QString install_names;
     QString uninstall_names;
     QStringList list;
@@ -252,6 +253,8 @@ void MainWindow::processDoc(const QDomDocument &doc)
             install_names.replace("\n", " ");
         } else if (element.tagName() == "kur-kos") {
             postinstall = element.text().trimmed();
+        } else if (element.tagName() == "paketci") {
+            paketci = element.text().trimmed();
         } else if (element.tagName() == "silinecek_paketler") {
             uninstall_names = element.text().trimmed();
         }
@@ -261,7 +264,7 @@ void MainWindow::processDoc(const QDomDocument &doc)
         return;
     }
     list << category << name << description << installable << screenshot << preinstall
-         << postinstall << install_names << uninstall_names;
+         << postinstall << install_names << uninstall_names<< paketci;
     popular_apps << list;
 }
 
@@ -310,6 +313,7 @@ void MainWindow::displayPopularApps()
         QString screenshot = list.at(4);
         QString preinstall = list.at(5);
         QString postinstall = list.at(6);
+        QString paketci = list.at(9);
         QString install_names = list.at(7);
         QString uninstall_names = list.at(8);
 
@@ -345,8 +349,11 @@ void MainWindow::displayPopularApps()
         // add uninstall_names (not displayed)
         childItem->setText(6, uninstall_names);
 
-        // add screenshot url (not displayed)
+        // Ekran resmi linki ekle (not displayed)
         childItem->setText(7, screenshot);
+
+        // Paketçi ekle (not displayed)
+        childItem->setText(9, paketci);
 
         // gray out installed items
         if (checkInstalled(uninstall_names)) {
@@ -711,7 +718,7 @@ void MainWindow::installSelected()
     // Kaynakları gerektiği gibi değiştir
     if(ui->radioMXtest->isChecked()) {
         cmd->run("echo deb http://main.mepis-deb.org/mx/testrepo/ mx15 test>>/etc/apt/sources.list.d/mxpm-temp.list");
-        //enable mx16 repo if necessary
+        //gerekirse test deposunu etkinleştirin
         if (system("cat /etc/apt/sources.list.d/*.list |grep -q mx16") == 0) {
             cmd->run("echo deb http://main.mepis-deb.org/mx/testrepo/ mx16 test>>/etc/apt/sources.list.d/mxpm-temp.list");
         }
@@ -1037,12 +1044,14 @@ void MainWindow::displayInfo(QTreeWidgetItem *item, int column)
     if (column == 3 && item->childCount() == 0) {
         QString desc = item->text(4);
         QString install_names = item->text(5);
+        QString paketci = item->text(9);
         QString title = item->text(2);
         QString msg = "<b>" + title + "</b><p>" + desc + "<p>" ;
         if (install_names != 0) {
-            msg += tr("Yüklenecek paketler: ") + install_names;
+            msg += tr("Yüklenecek paketler: ") + install_names + "</b><p>"+tr("Paketi Hazırlayan: ") + paketci;
+
         }
-        QUrl url = item->text(7); // screenshot url
+        QUrl url = item->text(7); // Ekrn resmi linki
 
         if (!url.isValid() || url.isEmpty() || url.url() == "none") {
             qDebug() << "no screenshot for: " << title;
@@ -1171,7 +1180,7 @@ void MainWindow::on_buttonAbout_clicked()
                        tr("MilPeK Hakkında"), "<p align=\"center\"><b><h2>" +
                        tr("Milis Program Ekle-Kaldır") + "</h2></b></p><p align=\"center\">" + tr("Sürüm: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("MX-Linux Paket Yöneticisi ") +
-                       tr("çatallanarak hazırlanmıştır ") +
+                       tr("<p align=\"center\">""çatallanarak hazırlanmıştır ") +
                        "</h3></p><p align=\"center\"><a href=\"http://milislinux.org\">http://milislinux.org</a><br /></p><p align=\"center\">" +
                        tr("Hazırlayan: Cihan Alkan") + "<br /><br /></p>");
     msgBox.addButton(tr("Lisans"), QMessageBox::AcceptRole);
